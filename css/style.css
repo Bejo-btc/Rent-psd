@@ -1,0 +1,79 @@
+:root{
+--yellow-color: blue;
+}
+*{
+   margin: 0 0 0 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.container {
+   padding-right:15px;
+   padding-left:15px;
+   margin-left: 20px auto;
+   margin-right:20px auto ;
+}
+
+li {
+   list-style-type: none;
+   
+}
+
+a{
+   text-decoration: none;
+}
+
+/* header*/
+header img{
+   width: 100px;
+}
+button a{
+   text-decoration: none;
+   color: black;
+}
+.but{
+   border: none;
+   background-color: yellow;
+   color: black;
+}
+
+/*end*/
+/* landing*/
+
+.landing > .one{
+  writing-mode: horizontal-tb; 
+}
+
+.landing .text{
+   position: absolute;
+   top: 50%;
+   left: 65%;
+   transform: translate(-50%, -50%);
+
+}
+
+.landing .info{
+   position: absolute;
+   position:11%;
+   bottom: 0;
+   z-index: 4;
+   background-color: yellow;
+}
+
+/* company */
+.company .one{
+   background-color: #f6f5f3;
+   color: orange;
+}
+.company .one span{
+font-size: 4rem;
+}
+
+/* Rent */
+.rent{
+   background-color:#f6f5f3 ;
+}
+
+.rent .card .card-body .price{
+   color: orange;
+}
