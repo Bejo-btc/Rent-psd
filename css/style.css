@@ -1,37 +1,40 @@
-:root{
---yellow-color: blue;
+:root {
+   --yellow-color: blue;
 }
-*{
+
+* {
    margin: 0 0 0 0;
    padding: 0;
    box-sizing: border-box;
 }
 
 .container {
-   padding-right:15px;
-   padding-left:15px;
+   padding-right: 15px;
+   padding-left: 15px;
    margin-left: 20px auto;
-   margin-right:20px auto ;
+   margin-right: 20px auto;
 }
 
 li {
    list-style-type: none;
-   
+
 }
 
-a{
+a {
    text-decoration: none;
 }
 
 /* header*/
-header img{
+header img {
    width: 100px;
 }
-button a{
+
+button a {
    text-decoration: none;
    color: black;
 }
-.but{
+
+.but {
    border: none;
    background-color: yellow;
    color: black;
@@ -40,11 +43,11 @@ button a{
 /*end*/
 /* landing*/
 
-.landing > .one{
-  writing-mode: horizontal-tb; 
+.landing>.one {
+   writing-mode: horizontal-tb;
 }
 
-.landing .text{
+.landing .text {
    position: absolute;
    top: 50%;
    left: 65%;
@@ -52,28 +55,118 @@ button a{
 
 }
 
-.landing .info{
+.search::after {
+   content: "\f002";
    position: absolute;
-   position:11%;
+   left: 10px;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 5px;
+   height: 5px;
+
+}
+
+.search,
+form button {
+   box-shadow: -7px 9px 7px -10px black;
+}
+
+form button {
+   background-color: #fdcc01;
+
+}
+
+.landing .info {
+   position: absolute;
+   position: 11%;
    bottom: 0;
    z-index: 4;
    background-color: yellow;
 }
 
 /* company */
-.company .one{
+.company{
+   overflow: hidden;
+}
+.company .one {
    background-color: #f6f5f3;
    color: orange;
 }
-.company .one span{
-font-size: 4rem;
+
+.company .one span {
+   font-size: 4rem;
 }
 
 /* Rent */
-.rent{
-   background-color:#f6f5f3 ;
+.rent {
+   background-color: #f6f5f3;
 }
 
-.rent .card .card-body .price{
+.rent .card .card-body .price {
    color: orange;
+}
+
+/* work */
+.work h5 {
+   margin-top: 14%;
+}
+
+/* card body */
+.work .card {
+   height: 400px;
+   counter-increment: card;
+   width: 400px;
+   overflow: hidden;
+   transition: 0.3s;
+}
+
+/* card active */
+.work .card:hover,
+.work .active  {
+   background-color: #fdcc01;
+   color: white;
+}
+
+/* numbers in the top of card  */
+.work .card::after {
+   content: "0" counter(card);
+   position: absolute;
+   left: -25px;
+   top: -41%;
+   font-size: 12rem;
+   font-weight: bolder;
+   z-index: 1;
+
+}
+
+/* numbers near h2 */
+.work .card h5::after {
+   content: "0" counter(card);
+   position: absolute;
+   left: 19px;
+
+}
+
+/* the under line color should be white in active 
+status fix it  */
+.work span::after {
+   content: "";
+   position: absolute;
+   height: 4px;
+   width: 6rem;
+   bottom: -9px;
+   left: 0;
+}
+
+.work span::after {
+   background-color: black;
+}
+
+.work  .serv{
+   height:560px;
+}
+/* end of work  */
+/* agents */
+.agents{
+   background-color: #f6f5f3;
 }
