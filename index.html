@@ -5,6 +5,8 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+   <meta name="auther" content="mustafa haider">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <link rel="stylesheet" href="css/all.min.css">
@@ -16,9 +18,9 @@
    <header class="d-flex p-3 overflow-hidden">
       <div class="container d-flex align-items-center justify-content-between">
          <img src="imgs/logo.png" alt="">
-         <ul class=" m-0 p-0 d-none d-sm-flex">
-            <li class="p-2"><a class="nav-link" href="#">home</a>
-            </li>
+         <!-- nav -->
+         <ul class=" m-0 p-0 d-none d-lg-flex">
+            <li class="p-2"><a class="nav-link" href="#">Home</a></li>
             <li class="p-2"><a class="nav-link" href="#">Apartments</a></li>
             <li class="p-2"> <a class="nav-link" href="#">How it work</a></li>
             <li class="p-2"><a class="nav-link" href="#">Agents</a></li>
@@ -33,34 +35,50 @@
       </div>
    </header>
    <!--header end --->
+
    <!-- landing -->
-   <div class="landing position-relative">
+   <div class="landing position-relative overflow-hidden">
       <div class="container ">
-         <div class="row flex-row-reverse justify-content-between ">
-            <img src="imgs/beautiful-architecture-office-business-building-with-glass-window-shape.jpg" alt=""
-               class=" col-10 p-0">
-            <span class="one d-flex align-items-end col-2">scroll down</span>
-            <div class="text position-absolute top-50 left-50 d-block">
-               <h1 class="d-inline-block mb-3">Find Your New <br>Modren Apartment</h1>
-               <form>
-                  <input type="text" placeholder="Search locations"
-                     class="px-5 py-2 border-0 search position-relative mt-2"><button
-                     class="p-2 border-0">Search</button>
-               </form>
+         <div class="row flex-row-reverse ">
+
+            <div class="col-10 position-relative">
+               <!-- land img -->
+               <img src="imgs/beautiful-architecture-office-business-building-with-glass-window-shape.jpg" alt=""
+                  class=" col-5 col-sm-10 p-0 w-100">
+
+               <!-- text left to the img -->
+               <div class="text position-absolute top-50 left-50 d-block">
+                  <h1 class="d-inline-block mb-3">Find Your New <br>Modren Apartment</h1>
+                  <form class="position-relative">
+                     <i class="fa-solid fa-search search z-3 position-absolute"></i><input type="text"
+                        placeholder="Search locations" class="px-5 py-2 border-0  position-relative mt-2"><button
+                        class="p-2 border-0">Search</button>
+                  </form>
+               </div>
+
+               <!-- text bottom of the img -->
+               <div class="position-absolute info d-flex m-0 p-3 w-auto z-3 ">
+                  <p class="m-0 px-sm-4 px-0"><i class="fa-solid fa-phone text-white fs-5 me-3 "></i> 00 123 456-789</p>
+                  <p class="m-0 px-sm-3 px-0"><i class="fa-solid fa-location text-white fs-5 me-3 "></i> Aluminum
+                     Australia </p>
+               </div>
+
             </div>
-            <div class="position-absolute info d-flex m-0 p-2 w-auto ">
-               <p class="m-0 px-3"><i class="fa-solid fa-phone"></i> 00 123 456-789</p>
-               <p class="m-0 px-3">Aluminum Australia </p>
+            <!-- scroll text -->
+            <div class="one">
+               <span class="d-flex align-items-end col-2 ">scroll down</span>
             </div>
          </div>
       </div>
    </div>
    <!-- landing end -->
    <!--company-->
-   <div class="company pt-5 mx-0 pb-5">
+   <div class="company pt-5 mx-0 overflow-hidden">
       <div class="container">
-         <div class="row">
-            <div class="text col-6 row  justify-content-between">
+         <div class="row  pb-3">
+
+            <!-- text on the left -->
+            <div class="text col-12 col-lg-6  row  justify-content-between ">
                <h2 class="mb-4">Our's company <br>Statistics </h2>
                <p class="mb-4 d-block h-1 w-100"> we are digital agency that make uer work and business eseasy to use.
                   we are
@@ -72,9 +90,10 @@
                   digital agency that make uer work and business eseasy to use we are digital agency that make
                   we are digital agency that make uer work and business eseasy to use.
                </p>
-
             </div>
-            <div class=" col-3 align-items-center">
+
+            <!-- numbers on the right -->
+            <div class=" col-3 align-items-center ">
                <div class="one mb-3  p-4 d-block text-center">
                   <span class=" fw-bolder">748</span>
                   <p class="m-0">Apartment</p>
@@ -84,222 +103,406 @@
                   <p class="m-0">Apartment</p>
                </div>
             </div>
-            <div class=" col-3 align-items-center">
+            <div class=" col-3 align-items-center pb-5">
                <div class="one p-4 mb-3 d-block  text-center">
                   <span class=" fw-bolder">3854</span>
                   <p class="m-0">Apartment</p>
                </div>
-               <div class="one p-4 d-block  text-center">
+               <div class="one p-4  text-center">
                   <span class=" fw-bolder">14</span>
                   <p class="m-0">Apartment</p>
                </div>
             </div>
          </div>
       </div>
-   </div>
-   <!--company end -->
-   <!-- Rent  -->
-   <div class="rent pt-5 pb-5">
-      <div class="container">
-         <h2 class="mb-4 fw-bolder">More Than 500+<br> Apparments for Rent</h2>
-         <div class="row mb-4">
-            <div class="col-md-4 gap-1">
-               <div class="card mb-3">
-                  <img src="imgs/beautiful-architecture-office-business-building-with-glass-window-shape.jpg" alt=""
-                     class="card-img-top w-100 h-100">
-                  <div class="card-body">
-                     <div class="card-title">
-                        <h6 class="fw-bold"> Randoem street Apt b4.53 New York</h6>
-                        <div class="d-flex justify-content-between">
-                           <span class="fw-bold fs-5 m-0 price d-inline-block">$3,500</span>
-                           <div>
-                              <span class="home d-inline-block"><i class="fa-solid fa-shower"></i> 2BA</span>
-                              <span class="home d-inline-block"><i class="fa-solid fa-bed"></i> 2BA</span>
-                           </div>
+      <!--company end -->
 
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-4  gap-1">
-               <div class="card mb-3">
-                  <img src="imgs/axelborg-towers-modern-architecture.jpg" alt="" class="card-img-top ">
-                  <div class="card-body">
-                     <div class="card-title">
-                        <h6 class="fw-bold"> Randoem street Apt b4.53 New York</h6>
-                        <div class="d-flex justify-content-between">
-                           <span class="fw-bold fs-5 m-0 price d-inline-block">$3,500</span>
-                           <div>
-                              <span class="home d-inline-block"><i class="fa-solid fa-shower"></i> 2BA</span>
-                              <span class="home d-inline-block"><i class="fa-solid fa-bed"></i> 2BA</span>
-                           </div>
+      <!-- Rent  -->
+      <div class="rent pt-5 pb-5 overflow-hidden">
+         <div class="container">
 
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-4 gap-1">
-               <div class="card mb-3">
-                  <img src="imgs/grey-concrete-building-blue-sky.jpg" alt="" class="card-img-top ">
-                  <div class="card-body">
-                     <div class="card-title">
-                        <h6 class="fw-bold"> Randoem street Apt b4.53 New York</h6>
-                        <div class="d-flex justify-content-between">
-                           <span class="fw-bold fs-5 m-0 price d-inline-block">$3,500</span>
-                           <div>
-                              <span class="home d-inline-block"><i class="fa-solid fa-shower"></i> 2BA</span>
-                              <span class="home d-inline-block"><i class="fa-solid fa-bed"></i> 2BA</span>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-4  gap-1">
-               <div class="card mb-3">
-                  <img src="imgs/low-angle-shot-facade-white-modern-building-blue-clear-sky.jpg" alt=""
-                     class="card-img-top w-100 h-100">
-                  <div class="card-body">
-                     <div class="card-title">
-                        <h6 class="fw-bold"> Randoem street Apt b4.53 New York</h6>
-                        <div class="d-flex justify-content-between">
-                           <span class="fw-bold fs-5 m-0 price d-inline-block">$3,500</span>
-                           <div>
-                              <span class="home d-inline-block"><i class="fa-solid fa-shower"></i> 2BA</span>
-                              <span class="home d-inline-block"><i class="fa-solid fa-bed"></i> 2BA</span>
-                           </div>
+            <h2 class="pb-5 fw-bolder">More Than 500+<br> Apparments for Rent</h2>
 
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-4  gap-1">
-               <div class="card mb-3">
-                  <img src="imgs/low-angle-shot-tall-city-building-with-blue-sky-background-new-york.jpg" alt=""
-                     class="card-img-top w-100 h-100">
-                  <div class="card-body">
-                     <div class="card-title">
-                        <h6 class="fw-bold"> Randoem street Apt b4.53 New York</h6>
-                        <div class="d-flex justify-content-between">
-                           <span class="fw-bold fs-5 m-0 price d-inline-block">$3,500</span>
-                           <div>
-                              <span class="home d-inline-block"><i class="fa-solid fa-shower"></i> 2BA</span>
-                              <span class="home d-inline-block"><i class="fa-solid fa-bed"></i> 2BA</span>
+            <!-- Rent gallary -->
+            <div class="row mb-4 mt-5">
+               <div class="col-md-4 gap-1">
+                  <div class="card mb-3">
+                     <img src="imgs/modern-business-building-scenery-touching-sky.jpg" alt=""
+                        class="card-img-top w-100 h-100">
+                     <div class="card-body">
+                        <div class="card-title">
+                           <h6 class="fw-bold"> Randoem street Apt b4.53 New York</h6>
+                           <div class="d-flex justify-content-between">
+                              <span class="fw-bold fs-5 m-0 price d-inline-block">$3,500</span>
+                              <div>
+                                 <span class="home d-inline-block"><i class="fa-solid fa-shower"></i> 2BA</span>
+                                 <span class="home d-inline-block"><i class="fa-solid fa-bed"></i> 2BA</span>
+                              </div>
                            </div>
-
                         </div>
                      </div>
                   </div>
                </div>
-            </div>
-            <div class="col-md-4  gap-1">
-               <div class="card mb-3">
-                  <img src="imgs/modern-business-building-scenery-touching-sky.jpg" alt=""
-                     class="card-img-top w-100 h-100">
-                  <div class="card-body">
-                     <div class="card-title">
-                        <h6 class="fw-bold"> Randoem street Apt b4.53 New York</h6>
-                        <div class="d-flex justify-content-between">
-                           <span class="fw-bold fs-5 m-0 price d-inline-block">$3,500</span>
-                           <div>
-                              <span class="home d-inline-block"><i class="fa-solid fa-shower"></i> 2BA</span>
-                              <span class="home d-inline-block"><i class="fa-solid fa-bed"></i> 2BA</span>
+               <div class="col-md-4  gap-1">
+                  <div class="card mb-3">
+                     <img src="imgs/modern-business-building-scenery-touching-sky.jpg" alt="" class="card-img-top ">
+                     <div class="card-body">
+                        <div class="card-title">
+                           <h6 class="fw-bold"> Randoem street Apt b4.53 New York</h6>
+                           <div class="d-flex justify-content-between">
+                              <span class="fw-bold fs-5 m-0 price d-inline-block">$3,500</span>
+                              <div>
+                                 <span class="home d-inline-block"><i class="fa-solid fa-shower"></i> 2BA</span>
+                                 <span class="home d-inline-block"><i class="fa-solid fa-bed"></i> 2BA</span>
+                              </div>
                            </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 gap-1">
+                  <div class="card mb-3">
+                     <img src="imgs/modern-business-building-scenery-touching-sky.jpg" alt="" class="card-img-top ">
+                     <div class="card-body">
+                        <div class="card-title">
+                           <h6 class="fw-bold"> Randoem street Apt b4.53 New York</h6>
+                           <div class="d-flex justify-content-between">
+                              <span class="fw-bold fs-5 m-0 price d-inline-block">$3,500</span>
+                              <div>
+                                 <span class="home d-inline-block"><i class="fa-solid fa-shower"></i> 2BA</span>
+                                 <span class="home d-inline-block"><i class="fa-solid fa-bed"></i> 2BA</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4  gap-1">
+                  <div class="card mb-3">
+                     <img src="imgs/modern-business-building-scenery-touching-sky.jpg" alt=""
+                        class="card-img-top w-100 h-100">
+                     <div class="card-body">
+                        <div class="card-title">
+                           <h6 class="fw-bold"> Randoem street Apt b4.53 New York</h6>
+                           <div class="d-flex justify-content-between">
+                              <span class="fw-bold fs-5 m-0 price d-inline-block">$3,500</span>
+                              <div>
+                                 <span class="home d-inline-block"><i class="fa-solid fa-shower"></i> 2BA</span>
+                                 <span class="home d-inline-block"><i class="fa-solid fa-bed"></i> 2BA</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4  gap-1">
+                  <div class="card mb-3">
+                     <img src="imgs/modern-business-building-scenery-touching-sky.jpg" alt=""
+                        class="card-img-top w-100 h-100">
+                     <div class="card-body">
+                        <div class="card-title">
+                           <h6 class="fw-bold"> Randoem street Apt b4.53 New York</h6>
+                           <div class="d-flex justify-content-between">
+                              <span class="fw-bold fs-5 m-0 price d-inline-block">$3,500</span>
+                              <div>
+                                 <span class="home d-inline-block"><i class="fa-solid fa-shower"></i> 2BA</span>
+                                 <span class="home d-inline-block"><i class="fa-solid fa-bed"></i> 2BA</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4  gap-1">
+                  <div class="card mb-3">
+                     <img src="imgs/modern-business-building-scenery-touching-sky.jpg" alt=""
+                        class="card-img-top w-100 h-100">
+                     <div class="card-body">
+                        <div class="card-title">
+                           <h6 class="fw-bold"> Randoem street Apt b4.53 New York</h6>
+                           <div class="d-flex justify-content-between">
+                              <span class="fw-bold fs-5 m-0 price d-inline-block">$3,500</span>
+                              <div>
+                                 <span class="home d-inline-block"><i class="fa-solid fa-shower"></i> 2BA</span>
+                                 <span class="home d-inline-block"><i class="fa-solid fa-bed"></i> 2BA</span>
+                              </div>
 
+                           </div>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
-         </div>
-         <form action="">
-            <input type="text" placeholder="Search locations" class="px-5 py-2 border-0"><button
-               class="p-2 border-0">Search</button>
-         </form>
-      </div>
-   </div>
-   <!-- Rent End -->
-   <!-- work -->
-   <div class="work pt-5 pb-4">
-      <div class="container">
-         <h2 class=" row mb-4 fw-bolder position-relative mt-5">How it work?</h2>
-         <p class="col-md-4 mb-5 mx-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus labore
-            corrupti amet
-            dolore
-            reiciendis
-         </p>
-         <div class="row position-relative gap-3 ">
-            <div class="card active col-md-4  border-0 p-5">
-               <h5 class="d-block mb-4">Find your location</h5>
-               <p class="lh-lg mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus labore
-                  corrupti amet
-                  dolore
-                  reiciendis
-               </p>
-               <span class="position-relative">Find Location</span>
+            <!-- gall end  -->
+
+            <!-- saerch input and button  -->
+            <div class="row">
+               <form class="position-relative col-4 px-0">
+                  <i class="fa-solid fa-search search z-3"></i><input type="text" placeholder="Search locations"
+                     class="px-5 py-2 border-0  position-relative mt-2"><button class="p-2 border-0">Search</button>
+               </form>
+               <button class="p-3 view border-0 col-3">View All Appartments</button>
             </div>
-            <div class="card col-md-4   border-0 p-5">
-               <h5 class="d-block mb-4">Find Aparrtment</h5>
-               <p class=" lh-lg mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus labore
-                  corrupti amet
-                  dolore
-                  reiciendis
-               </p>
-               <span class="position-relative">Find Location</span>
-            </div>
-            <div class="card col-md-4   border-0 p-5">
-               <h5 class="d-block mb-4">make Contact</h5>
-               <p class=" lh-lg mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus labore
-                  corrupti amet
-                  dolore
-                  reiciendis
-               </p>
-               <span class="position-relative">Find Location</span>
-            </div>
-         </div>
-         <!-- services section  -->
-         <h2 class="pt-5 pb-3 d-block">Services</h2>
-         <p class="mb-5 mx-0 w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nihil repudiandae
-            commodi.
-            Voluptatum harum nisi,</p>
-         <div class="row  justify-content-between">
-            <img src="imgs/grey-concrete-building-blue-sky.jpg" alt="" class="col-md-6 serv">
-            <div class="text col-md-5  ">
-               <h4 class="mb-3">Renting</h4>
-               <p class="mb-3 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo consectetur,
-                  doloremque laborum fuga,
-                  nihil fugiat quam exercitationem saepe voluptatum, necessitatibus cum distinctio at earum sed? A omnis
-                  aliquam eos magnam?</p>
-               <h4 class="mb-3">Renting</h4>
-               <p class="mb-3 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo consectetur,
-                  doloremque laborum fuga,
-                  nihil fugiat quam exercitationem saepe voluptatum, necessitatibus cum distinctio at earum sed? A omnis
-                  aliquam eos magnam?</p>
-               <h4 class="mb-3">Renting</h4>
-               <p class=" lh-lg mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo consectetur,
-                  doloremque laborum fuga,
-                  nihil fugiat quam exercitationem saepe voluptatum, necessitatibus cum distinctio at earum sed? A omnis
-                  aliquam eos magnam?</p>
-            </div>
+            <!-- search end  -->
          </div>
       </div>
-   </div>
-   <!-- work end -->
-   <!-- agents -->
-   <div class="agents pb-5">
-      <div class="container">
-         <h2 class="pt-5 pb-3 d-block">Meet Our Agents </h2>
-         <p class="mb-5 mx-0 w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nihil repudiandae
-            commodi.
-            Voluptatum harum nisi,</p>
-         <div class="row">
+      <!-- Rent End -->
 
+      <!-- work -->
+      <div class="work pt-5 pb-4">
+         <div class="container">
+            <!-- section title -->
+            <h2 class=" row mb-4 fw-bolder position-relative mt-5">How it work?</h2>
+            <p class="col-md-4 mb-5 mx-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus labore
+               corrupti amet
+               dolore
+               reiciendis
+            </p>
+
+            <!-- cards seaction -->
+            <div class="row position-relative gap-3 ">
+               <div class="card active col-md-4  border-0 p-5">
+                  <h5 class="d-block mb-4">Find your location</h5>
+                  <p class="lh-lg mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus labore
+                     corrupti amet
+                     dolore
+                     reiciendis
+                  </p>
+                  <span class="position-relative">Find Appartment</span>
+               </div>
+               <div class="card col-md-4   border-0 p-5">
+                  <h5 class="d-block mb-4">Find Aparrtment</h5>
+                  <p class=" lh-lg mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus labore
+                     corrupti amet
+                     dolore
+                     reiciendis
+                  </p>
+                  <span class="position-relative">Find Location</span>
+               </div>
+               <div class="card col-md-4   border-0 p-5">
+                  <h5 class="d-block mb-4">Make Contact</h5>
+                  <p class=" lh-lg mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus labore
+                     corrupti amet
+                     dolore
+                     reiciendis
+                  </p>
+                  <span class="position-relative">Find Location</span>
+               </div>
+            </div>
+            <!-- cards section end -->
+
+            <!-- services section  -->
+            <h2 class="pt-5 pb-3 d-block">Services</h2>
+            <p class="mb-5 mx-0 w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nihil
+               repudiandae
+               commodi.
+               Voluptatum harum nisi,</p>
+
+            <!-- services text and img -->
+            <div class="row  justify-content-between gap-1">
+               <img src="imgs/grey-concrete-building-blue-sky.jpg" alt="" class="col-md-6 serv d-none d-lg-block">
+               <div class="text  col-lg-5">
+                  <h4 class="mb-3">Renting</h4>
+                  <p class="mb-3 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo consectetur,
+                     doloremque laborum fuga,
+                     nihil fugiat quam exercitationem saepe voluptatum, necessitatibus cum distinctio at earum sed? A
+                     omnis
+                     aliquam eos magnam?</p>
+                  <h4 class="mb-3">Selling </h4>
+                  <p class="mb-3 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo consectetur,
+                     doloremque laborum fuga,
+                     nihil fugiat quam exercitationem saepe voluptatum, necessitatibus cum distinctio at earum sed? A
+                     omnis
+                     aliquam eos magnam?</p>
+                  <h4 class="mb-3">Building</h4>
+                  <p class=" lh-lg mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo consectetur,
+                     doloremque laborum fuga,
+                     nihil fugiat quam exercitationem saepe voluptatum, necessitatibus cum distinctio at earum sed? A
+                     omnis
+                     aliquam eos magnam?</p>
+               </div>
+            </div>
          </div>
       </div>
-   </div>
+      <!-- work end -->
+
+      <!-- agents -->
+      <div class="agents pb-5">
+         <div class="container">
+
+            <!-- section title -->
+            <h2 class="pt-5 pb-3 d-block">Meet Our Agents </h2>
+            <p class="mb-5 mx-0 w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nihil
+               repudiandae
+               commodi.
+               Voluptatum harum nisi,</p>
+
+            <!-- agent cards -->
+            <div class="row">
+               <div class="col-md-4 ">
+                  <div class="card mb-3">
+                     <img src="imgs/تنزيل (1).jpeg" alt="" class="card-img-top ">
+                     <div class="card-body">
+                        <div class="card-title">
+                           <h6 class="fw-bold"> Agent</h6>
+                           <div class="d-flex justify-content-between">
+                              <span class="fw-bold fs-5 m-0 price ">Mr.Luke Skywallker</span>
+                              <div>
+                                 <i class="fa-brands fa-faecbook"></i>
+                                 <i class="fa-solid fa-phone"></i>
+                                 <i class="fa-solid fa-location"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 ">
+                  <div class="card ">
+                     <img src="imgs/تنزيل (2).jpeg" alt="" class="card-img-top ">
+                     <div class="card-body">
+                        <div class="card-title">
+                           <h6 class="fw-bold"> Agent</h6>
+                           <div class="d-flex justify-content-between">
+                              <span class="fw-bold fs-5 m-0 price ">Mr.Luke Skywallker</span>
+                              <div>
+                                 <i class="fa-solid fa-faecbook"></i>
+                                 <i class="fa-solid fa-bed"></i>
+                                 <i class="fa-solid fa-bed"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 ">
+                  <div class="card mb-3">
+                     <img src="imgs/تنزيل (1).jpeg" alt="" class="card-img-top ">
+                     <div class="card-body">
+                        <div class="card-title">
+                           <h6 class="fw-bold"> Agent</h6>
+                           <div class="d-flex justify-content-between">
+                              <span class="fw-bold fs-5 m-0 price ">Mr.Luke Skywallker</span>
+                              <div>
+                                 <i class="fa-solid fa-faecbook"></i>
+                                 <i class="fa-solid fa-bed"></i>
+                                 <i class="fa-solid fa-bed"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- agents-cards end -->
+         </div>
+      </div>
+      <!-- end of agents -->
+
+      <!-- Adds  -->
+      <div class="add pt-5 ">
+         <div class="container">
+            <!-- image and text  -->
+
+            <div class="row justify-content-between mb-5 align-items-center ">
+               <!-- image on the left -->
+               <div class="col-md-5 col-lg-5 left position-relative">
+                  <img src="imgs/office-skyscrapers-business-district.jpg" alt="" class="w-100">
+                  <span class=""><i class="fa-solid fa-location text-white me-3"></i> Melboume Austrialia</span>
+               </div>
+               <!-- text on the right -->
+               <div class="row  col-md-6 col-lg-6">
+                  <h3 class="mb-3">super aweasome add</h4>
+                     <p class=" lh-lg mb-0 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo consectetur,
+                        doloremque laborum fuga,
+                        nihil fugiat quam exercitationem saepe voluptatum, necessitatibus cum distinctio at earum sed? A
+                        omnis
+                        aliquam eos magnam?</p>
+               </div>
+            </div>
+
+            <div class="row justify-content-between mb-5 align-items-center  ">
+               <!-- text on the left -->
+               <div class="row col-md-6 col-lg-6 text-rigth">
+                  <h3 class="mb-4 ">super aweasome add</h4>
+                     <p class=" lh-lg mb-0 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo consectetur,
+                        doloremque laborum fuga,
+                        nihil fugiat quam exercitati onem saepe voluptatum, necessitatibus cum distinctio at earum sed?
+                        A
+                        omnis
+                        aliquam eos magnam?</p>
+               </div>
+               <!-- image on the right -->
+               <div class="col-md-5 col-lg-5 right position-relative">
+                  <img src="imgs/office-skyscrapers-business-district.jpg" alt="" class="w-100">
+                  <span><i class="fa-solid fa-location text-white me-3"></i> Melboume Austrialia</span>
+               </div>
+            </div>
+
+            <!-- image on the left -->
+            <div class="row justify-content-between mb-5 align-items-center">
+               <img src="imgs/office-skyscrapers-business-district.jpg" alt=""
+                  class="col-md-5 col-lg-5 positions-relative">
+               <div class="row  col-md-6 col-lg-6">
+                  <!-- text on the right -->
+                  <h3 class="mb-3">super aweasome add</h4>
+                     <p class=" lh-lg mb-0 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo consectetur,
+                        doloremque laborum fuga,
+                        nihil fugiat quam exercitationem saepe voluptatum, necessitatibus cum distinctio at earum sed? A
+                        omnis
+                        aliquam eos magnam?</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Adds End   -->
+
+
+      <!-- footer section -->
+      <footer class="p-4 bg-dark text-white">
+         <div class="container">
+            <div class="row justify-content-between align-items-center line position-relative pb-4">
+               <!-- footer top section  -->
+               <h2 class=" w-auto">Luxeastate <br> Explore Real Estate</h2>
+               <input type="text" class=" w-50 p-3 border-0" placeholder="Subscribe to Our Newsletter">
+               <i class="fa-solid fa-arrow-right-long z-3 position-absolute icon"></i>
+            </div>
+            <!-- col-one -->
+            <div class="row justify-content-between mt-5">
+               <div class="col-8 col-md-4 col-lg-4">
+                  <h5 class="mb-5">Luxestate</h5>
+                  <span>&copy; 2019 - Luxestate, <br>All Rigth Reserved</span>
+               </div>
+               <!-- col-two -->
+               <div class="col-6 col-md-2 col-lg-2">
+                  <h5 class="text-ligth-50 mb-4">Company</h5>
+                  <li>About</li>
+                  <li>FAQ</li>
+                  <li>contact</li>
+                  <li>Socail</li>
+               </div>
+               <!-- col-there -->
+               <div class="col-6 col-md-2 col-lg-2">
+                  <h5 class="text-ligth-50 mb-4">PRODUCT</h5>
+                  <li>Appartments</li>
+                  <li>How it Work</li>
+               </div>
+               <!-- col-four -->
+               <div class="col-6 col-md-2 col-lg-2">
+                  <h5 class="text-ligth-50 mb-4 ">Services</h5>
+                  <li>Renting</li>
+                  <li>Selling</li>
+                  <li>Building</li>
+               </div>
+               <!-- col- five  -->
+               <div class="col-6 col-md-2 col-lg-2">
+                  <h5 class="text-ligth-50 mb-4">Luxestate</h5>
+                  <li>Agents</li>
+                  <li>Huresforms</li>
+               </div>
+            </div>
+         </div>
+      </footer>
 </body>
 
 </html>

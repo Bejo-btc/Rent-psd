@@ -1,5 +1,10 @@
 :root {
-   --yellow-color: blue;
+   ---color: blue;
+   --Color-orang: var(--Color-orang);
+}
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -36,34 +41,32 @@ button a {
 
 .but {
    border: none;
-   background-color: yellow;
+   background-color: var(--Color-orang);
    color: black;
 }
 
 /*end*/
 /* landing*/
 
-.landing>.one {
+.landing .one {
    writing-mode: horizontal-tb;
 }
 
 .landing .text {
-   position: absolute;
    top: 50%;
-   left: 65%;
+   left: 7%;
    transform: translate(-50%, -50%);
 
 }
 
-.search::after {
-   content: "\f002";
-   position: absolute;
+.search {
    left: 10px;
    top: 50%;
    transform: translateY(-50%);
    width: 5px;
    height: 5px;
-
+   color: black;
+   box-shadow: -8px 11px 7px -10px black;
 }
 
 .search,
@@ -71,26 +74,22 @@ form button {
    box-shadow: -7px 9px 7px -10px black;
 }
 
-form button {
-   background-color: #fdcc01;
-
+button {
+   background-color: var(--Color-orang);
+   box-shadow: -7px 9px 7px -10px black;
 }
 
 .landing .info {
-   position: absolute;
-   position: 11%;
+   right: 10px;
    bottom: 0;
-   z-index: 4;
-   background-color: yellow;
+   background-color: var(--Color-orang);
 }
 
 /* company */
-.company{
-   overflow: hidden;
-}
+
 .company .one {
    background-color: #f6f5f3;
-   color: orange;
+   color: var(--Color-orang);
 }
 
 .company .one span {
@@ -102,8 +101,19 @@ form button {
    background-color: #f6f5f3;
 }
 
-.rent .card .card-body .price {
-   color: orange;
+.rent img {
+   width: 100%;
+   height: 100%;
+}
+
+.rent .view {
+   background-color: white;
+   border: 0;
+   width: fit-content;
+}
+
+.price {
+   color: var(--Color-orang);
 }
 
 /* work */
@@ -122,8 +132,8 @@ form button {
 
 /* card active */
 .work .card:hover,
-.work .active  {
-   background-color: #fdcc01;
+.work .active {
+   background-color: var(--Color-orang);
    color: white;
 }
 
@@ -162,11 +172,68 @@ status fix it  */
    background-color: black;
 }
 
-.work  .serv{
-   height:560px;
+.work .serv {
+   height: auto;
 }
+
 /* end of work  */
 /* agents */
-.agents{
+.agents {
    background-color: #f6f5f3;
+}
+
+
+.agents .card {
+   box-shadow: -7px 9px 7px -10px black;
+}
+
+/* Adds */
+
+/* the before and the after is not working fix it  */
+.add div>span {
+   position: absolute;
+   padding: 8px;
+   width: 70%;
+   height: 25%;
+   left: 50%;
+   bottom: -20px;
+   transform: translateX(-50%);
+   background-color: var(--Color-orang);
+   color: black;
+   z-index: 2;
+}
+
+.add div>.right span {
+   position: absolute;
+   padding: 8px;
+   width: 70%;
+   height: 25%;
+   left: 70%;
+   bottom: -20px;
+   transform: translateX(-50%);
+   background-color:var(--Color-orang) ;
+   color: black;
+   z-index: 2;
+}
+
+/* footer */
+footer .line::after {
+   content: "";
+   position: absolute;
+   width: calc(100% - 30px);
+   height: 2px;
+   left: 15px;
+   bottom: 0px;
+   background-color: gray;
+}
+
+footer .icon {
+   position: absolute;
+   right: 20px;
+   color: black;
+
+}
+
+footer li {
+   margin-bottom: 1rem;
 }
